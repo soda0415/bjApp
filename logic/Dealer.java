@@ -42,7 +42,7 @@ public class Dealer {
 	public void operate(int count) {
 		int score =0;
 		int k = 0;
-		//Aを引いたかチェック
+		//Aを引いたかチェックするフラグ
 		boolean A_flg = false;
 		//一回目シャッフル
 		Collections.shuffle(cardPool);
@@ -50,7 +50,6 @@ public class Dealer {
 			//System.out.println(cardPool.get(k));
 			//Aを引いた場合は、さらに条件分岐
 			if(cardPool.get(k)==1) {
-				//1を足して17～21になる場合
 				A_flg = true;
 			    score = score + 11;
 			}else {
