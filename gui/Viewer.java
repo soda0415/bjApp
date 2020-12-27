@@ -27,12 +27,12 @@ public class Viewer extends JFrame implements ActionListener{
 	}
 
 	Viewer(String title){
-		setTitle(title);
-		setBounds(100, 200, 500, 500);
-		//閉じるボタン追加
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    setTitle(title);
+	    setBounds(100, 200, 500, 500);
+	    //閉じるボタン追加
+	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		JButton button = new JButton("計算開始");
+	    JButton button = new JButton("計算開始");
 	    button.addActionListener(this);JPanel p = new JPanel();
 	    p.setLayout(new GridLayout(8,10));
 
