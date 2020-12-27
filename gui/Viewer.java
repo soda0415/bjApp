@@ -38,10 +38,10 @@ public class Viewer extends JFrame implements ActionListener{
 
 	    //トランプの枚数入力フォーム作成
 	    for(int i=0;i<13;i++){
-            tf[i]=new JTextField("24",3);
-            p.add(new JLabel(i+1+"の残り枚数:", SwingConstants.LEFT));
-            p.add(tf[i]);
-        }
+            	tf[i]=new JTextField("24",3);
+            	p.add(new JLabel(i+1+"の残り枚数:", SwingConstants.LEFT));
+            	p.add(tf[i]);
+            }
 	    p.add(new JLabel("ドロー回数", SwingConstants.LEFT));
 	    times = new JTextField("100000",10);
 	    p.add(times);
